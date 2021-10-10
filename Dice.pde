@@ -1,5 +1,4 @@
 Die one;
-int sum=0;
 void setup()
 {
   noLoop();
@@ -7,6 +6,7 @@ void setup()
 }
 void draw()
 {
+  int sum=0;
   background(0);//your code here
   for (int i = 0; i < 400; i += 50) {
     for(int j = 0; j < 400; j += 50){
@@ -24,7 +24,7 @@ void draw()
 void mousePressed()
 {
   redraw();
-  sum=0;
+  
 }
 class Die //models one single dice cube
 {
